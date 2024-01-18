@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../ex3_Tribonacci_FSM-D.srcs/sources_1/new/tribonacci_HLSM.vhd" \
+"../../../../ex3_Tribonacci_FSM-D.srcs/sim_1/new/tribonacci_tb.vhd" \
+
+# Do not sort compile order
+nosort

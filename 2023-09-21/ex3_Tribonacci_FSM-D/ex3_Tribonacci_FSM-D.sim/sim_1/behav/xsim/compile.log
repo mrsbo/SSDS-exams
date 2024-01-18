@@ -1,0 +1,2 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sbo/SSDS/Exams/2023-09-21/ex3_Tribonacci_FSM-D/ex3_Tribonacci_FSM-D.srcs/sim_1/new/tribonacci_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'testbench'

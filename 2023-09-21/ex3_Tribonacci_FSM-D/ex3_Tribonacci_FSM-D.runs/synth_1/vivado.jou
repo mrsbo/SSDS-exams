@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Thu Jan 18 12:59:25 2024
+# Process ID: 24338
+# Current directory: /home/sbo/SSDS/Exams/2023-09-21/ex3_Tribonacci_FSM-D/ex3_Tribonacci_FSM-D.runs/synth_1
+# Command line: vivado -log tribonacci_HLSM.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source tribonacci_HLSM.tcl
+# Log file: /home/sbo/SSDS/Exams/2023-09-21/ex3_Tribonacci_FSM-D/ex3_Tribonacci_FSM-D.runs/synth_1/tribonacci_HLSM.vds
+# Journal file: /home/sbo/SSDS/Exams/2023-09-21/ex3_Tribonacci_FSM-D/ex3_Tribonacci_FSM-D.runs/synth_1/vivado.jou
+# Running On: archlapps, OS: Linux, CPU Frequency: 1119.962 MHz, CPU Physical cores: 12, Host memory: 33349 MB
+#-----------------------------------------------------------
+source tribonacci_HLSM.tcl -notrace

@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "secureip" --snapshot "tribonacci_HLSM_behav" "xil_defaultlib.tribonacci_HLSM" -log "elaborate.log" 
