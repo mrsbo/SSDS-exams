@@ -11,21 +11,37 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0.000 ns"></ZoomStartTime>
-      <ZoomEndTime time="404.501 ns"></ZoomEndTime>
+      <ZoomEndTime time="410.501 ns"></ZoomEndTime>
       <Cursor1Time time="0.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="156"></NameColumnWidth>
+      <NameColumnWidth column_width="144"></NameColumnWidth>
       <ValueColumnWidth column_width="60"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="7" />
+   <WVObjectSize size="11" />
    <wvobject type="array" fp_name="/testbench/n_s">
       <obj_property name="ElementShortName">n_s[3:0]</obj_property>
       <obj_property name="ObjectShortName">n_s[3:0]</obj_property>
    </wvobject>
+   <wvobject type="array" fp_name="/testbench/ind_s">
+      <obj_property name="ElementShortName">ind_s[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ind_s[3:0]</obj_property>
+   </wvobject>
    <wvobject type="array" fp_name="/testbench/P_s">
       <obj_property name="ElementShortName">P_s[11:0]</obj_property>
       <obj_property name="ObjectShortName">P_s[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/tr_p_s">
+      <obj_property name="ElementShortName">tr_p_s[11:0]</obj_property>
+      <obj_property name="ObjectShortName">tr_p_s[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/tr_pp_s">
+      <obj_property name="ElementShortName">tr_pp_s[11:0]</obj_property>
+      <obj_property name="ObjectShortName">tr_pp_s[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/tr_ppp_s">
+      <obj_property name="ElementShortName">tr_ppp_s[11:0]</obj_property>
+      <obj_property name="ObjectShortName">tr_ppp_s[11:0]</obj_property>
    </wvobject>
    <wvobject type="logic" fp_name="/testbench/start_s">
       <obj_property name="ElementShortName">start_s</obj_property>
