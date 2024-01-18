@@ -2,3 +2,6 @@ Running: xsim.dir/tribonacci_HLSM_behav/xsimk -simmode gui -wdb tribonacci_HLSM_
 Design successfully loaded
 Design Loading Memory Usage: 23200 KB (Peak: 23952 KB)
 Design Loading CPU Usage: 10 ms
+Simulation completed
+Simulation Memory Usage: 104936 KB (Peak: 162468 KB)
+Simulation CPU Usage: 30 ms
