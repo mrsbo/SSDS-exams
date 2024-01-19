@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../ex2_FSM_remove_initial_1.srcs/sources_1/new/FSM_Moore.vhd" \
+"../../../../ex2_FSM_remove_initial_1.srcs/sim_1/new/FSM_Moore_tb.vhd" \
+
+# Do not sort compile order
+nosort
