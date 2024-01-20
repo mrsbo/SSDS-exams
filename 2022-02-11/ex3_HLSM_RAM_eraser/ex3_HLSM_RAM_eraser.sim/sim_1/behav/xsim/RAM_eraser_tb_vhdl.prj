@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../ex3_HLSM_RAM_eraser.srcs/sources_1/new/HLSM_RAM_eraser.vhd" \
+"../../../../ex3_HLSM_RAM_eraser.srcs/sim_1/new/RAM_eraser_tb.vhd" \
+
+# Do not sort compile order
+nosort

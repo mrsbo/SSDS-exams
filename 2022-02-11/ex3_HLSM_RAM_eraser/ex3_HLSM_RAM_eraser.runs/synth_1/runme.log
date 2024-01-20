@@ -1,0 +1,212 @@
+
+*** Running vivado
+    with args -log HLSM_RAM_eraser.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source HLSM_RAM_eraser.tcl
+
+
+****** Vivado v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source HLSM_RAM_eraser.tcl -notrace
+Command: synth_design -top HLSM_RAM_eraser -part xc7k70tfbv676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 16170
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1694.168 ; gain = 353.832 ; free physical = 8258 ; free virtual = 30726
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'HLSM_RAM_eraser' [/home/sbo/SSDS/Exams/2022-02-11/ex3_HLSM_RAM_eraser/ex3_HLSM_RAM_eraser.srcs/sources_1/new/HLSM_RAM_eraser.vhd:43]
+WARNING: [Synth 8-614] signal 'currAddress' is read in the process but is not in the sensitivity list [/home/sbo/SSDS/Exams/2022-02-11/ex3_HLSM_RAM_eraser/ex3_HLSM_RAM_eraser.srcs/sources_1/new/HLSM_RAM_eraser.vhd:77]
+WARNING: [Synth 8-614] signal 'startAddress' is read in the process but is not in the sensitivity list [/home/sbo/SSDS/Exams/2022-02-11/ex3_HLSM_RAM_eraser/ex3_HLSM_RAM_eraser.srcs/sources_1/new/HLSM_RAM_eraser.vhd:77]
+WARNING: [Synth 8-614] signal 'endAddress' is read in the process but is not in the sensitivity list [/home/sbo/SSDS/Exams/2022-02-11/ex3_HLSM_RAM_eraser/ex3_HLSM_RAM_eraser.srcs/sources_1/new/HLSM_RAM_eraser.vhd:77]
+INFO: [Synth 8-256] done synthesizing module 'HLSM_RAM_eraser' (0#1) [/home/sbo/SSDS/Exams/2022-02-11/ex3_HLSM_RAM_eraser/ex3_HLSM_RAM_eraser.srcs/sources_1/new/HLSM_RAM_eraser.vhd:43]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1765.137 ; gain = 424.801 ; free physical = 8162 ; free virtual = 30633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1779.980 ; gain = 439.645 ; free physical = 8153 ; free virtual = 30624
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1787.984 ; gain = 447.648 ; free physical = 8149 ; free virtual = 30620
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'HLSM_RAM_eraser'
+WARNING: [Synth 8-327] inferring latch for variable 'Finish_reg' [/home/sbo/SSDS/Exams/2022-02-11/ex3_HLSM_RAM_eraser/ex3_HLSM_RAM_eraser.srcs/sources_1/new/HLSM_RAM_eraser.vhd:104]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+                  waitgo |                               01 |                               01
+                   clear |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'HLSM_RAM_eraser'
+WARNING: [Synth 8-327] inferring latch for variable 'endAddress_reg' [/home/sbo/SSDS/Exams/2022-02-11/ex3_HLSM_RAM_eraser/ex3_HLSM_RAM_eraser.srcs/sources_1/new/HLSM_RAM_eraser.vhd:88]
+WARNING: [Synth 8-327] inferring latch for variable 'startAddress_reg' [/home/sbo/SSDS/Exams/2022-02-11/ex3_HLSM_RAM_eraser/ex3_HLSM_RAM_eraser.srcs/sources_1/new/HLSM_RAM_eraser.vhd:84]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1795.992 ; gain = 455.656 ; free physical = 8138 ; free virtual = 30612
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
++---Muxes : 
+	   3 Input   10 Bit        Muxes := 2     
+	   3 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 3     
+	   3 Input    1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1930.383 ; gain = 590.047 ; free physical = 7938 ; free virtual = 30442
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1930.383 ; gain = 590.047 ; free physical = 7938 ; free virtual = 30442
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1930.383 ; gain = 590.047 ; free physical = 7938 ; free virtual = 30442
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1930.383 ; gain = 590.047 ; free physical = 7942 ; free virtual = 30447
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1930.383 ; gain = 590.047 ; free physical = 7942 ; free virtual = 30447
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1930.383 ; gain = 590.047 ; free physical = 7942 ; free virtual = 30447
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1930.383 ; gain = 590.047 ; free physical = 7942 ; free virtual = 30447
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1930.383 ; gain = 590.047 ; free physical = 7942 ; free virtual = 30447
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1930.383 ; gain = 590.047 ; free physical = 7942 ; free virtual = 30447
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     2|
+|3     |LUT2   |    11|
+|4     |LUT3   |     4|
+|5     |LUT4   |    24|
+|6     |LUT5   |     8|
+|7     |LUT6   |     4|
+|8     |FDRE   |    12|
+|9     |LD     |    21|
+|10    |IBUF   |    13|
+|11    |OBUF   |     1|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   101|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1930.383 ; gain = 590.047 ; free physical = 7942 ; free virtual = 30447
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1930.383 ; gain = 590.047 ; free physical = 7942 ; free virtual = 30447
+Synthesis Optimization Complete : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1930.391 ; gain = 590.047 ; free physical = 7942 ; free virtual = 30447
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1930.391 ; gain = 0.000 ; free physical = 8214 ; free virtual = 30722
+INFO: [Netlist 29-17] Analyzing 23 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2065.066 ; gain = 0.000 ; free physical = 8112 ; free virtual = 30633
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 21 instances were transformed.
+  LD => LDCE: 21 instances
+
+Synth Design complete | Checksum: 6b0de777
+INFO: [Common 17-83] Releasing license: Synthesis
+16 Infos, 7 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 2065.066 ; gain = 724.730 ; free physical = 8112 ; free virtual = 30634
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1369.295; main = 1369.295; forked = 0.000
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 2065.070; main = 2065.070; forked = 0.000
+INFO: [Common 17-1381] The checkpoint '/home/sbo/SSDS/Exams/2022-02-11/ex3_HLSM_RAM_eraser/ex3_HLSM_RAM_eraser.runs/synth_1/HLSM_RAM_eraser.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file HLSM_RAM_eraser_utilization_synth.rpt -pb HLSM_RAM_eraser_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Jan 20 15:32:38 2024...
