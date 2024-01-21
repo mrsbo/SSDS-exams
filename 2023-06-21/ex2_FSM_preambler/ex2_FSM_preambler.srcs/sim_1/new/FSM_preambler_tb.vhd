@@ -45,11 +45,13 @@ architecture Behavioral of testbench is
          );
     end component;
     
-    signal start_s, data_out_s, clk_s, rst_s : std_logic;
+    signal start_s, data_out_s1, clk_s, rst_s : std_logic;
+    signal data_out_s2 : std_logic;
     constant clk_period : time := 20ns;
     
 begin
-    uut0: FSM_preambler port map (start_s, data_out_s, clk_s, rst_s);
+    uut0: entity work.FSM_preambler(beh_1proc) port map (start_s, data_out_s1, clk_s, rst_s);
+    uut1: entity work.FSM_preambler(beh_2proc) port map (start_s, data_out_s2, clk_s, rst_s);
     
     process
     begin

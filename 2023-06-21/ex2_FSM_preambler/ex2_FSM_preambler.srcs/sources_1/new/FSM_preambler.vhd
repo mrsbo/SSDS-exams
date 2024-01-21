@@ -39,7 +39,7 @@ entity FSM_preambler is
      );
 end FSM_preambler;
 
-architecture Behavioral of FSM_preambler is
+architecture beh_1proc of FSM_preambler is
 
     type StateType is (idle, s1, s2, s3, s4, s5, s6, s7);
     signal state, nextState : StateType;
@@ -90,4 +90,70 @@ begin
     end if;
 end process;
                                 
-end Behavioral;
+end beh_1proc;
+
+
+-- Not needed, for verifying the previous architecture timing constraint
+architecture beh_2proc of FSM_preambler is
+
+    type StateType is (idle, s1, s2, s3, s4, s5, s6, s7);
+    signal state, nextState : StateType;
+    
+    signal outReg, nextOutReg : std_logic;
+    
+begin
+
+process(clk)
+begin
+    if (rising_edge(clk)) then
+        if (rst = '1') then
+            state <= idle;
+            outReg <= '0';
+        else
+            state <= nextState;
+            outReg <= nextOutReg;
+        end if;
+   end if;
+end process;
+
+process(state, outReg, start)
+begin
+    nextOutReg <= outReg;   -- optional
+     
+    case state is
+        when idle =>
+            if (start = '0') then
+                nextState <= idle;
+                nextOutReg <= '0';                     
+            else
+                nextState <= s1;
+                nextOutReg <= '1';
+            end if;
+        when s1 =>
+            nextState <= s2;
+            nextOutReg <= '0'; 
+        when s2 =>
+            nextState <= s3;
+            nextOutReg <= '1';                                          
+        when s3 =>
+            nextState <= s4;
+            nextOutReg <= '0'; 
+        when s4 =>
+            nextState <= s5;
+            nextOutReg <= '1';    
+        when s5 =>
+            nextState <= s6;
+            nextOutReg <= '0'; 
+        when s6 =>
+            nextState <= s7;
+            nextOutReg <= '1';
+        when s7 =>
+            nextState <= idle;
+            nextOutReg <= '0';                                                                              
+    end case;
+
+end process;
+
+data_out <= outReg;
+                                
+end beh_2proc;

@@ -11,21 +11,25 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0.000 ns"></ZoomStartTime>
-      <ZoomEndTime time="172.201 ns"></ZoomEndTime>
-      <Cursor1Time time="0.000 ns"></Cursor1Time>
+      <ZoomEndTime time="290.954 ns"></ZoomEndTime>
+      <Cursor1Time time="1,000.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="104"></NameColumnWidth>
+      <NameColumnWidth column_width="96"></NameColumnWidth>
       <ValueColumnWidth column_width="60"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="5" />
+   <WVObjectSize size="6" />
    <wvobject type="logic" fp_name="/testbench/start_s">
       <obj_property name="ElementShortName">start_s</obj_property>
       <obj_property name="ObjectShortName">start_s</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="/testbench/data_out_s">
-      <obj_property name="ElementShortName">data_out_s</obj_property>
-      <obj_property name="ObjectShortName">data_out_s</obj_property>
+   <wvobject type="logic" fp_name="/testbench/data_out_s1">
+      <obj_property name="ElementShortName">data_out_s1</obj_property>
+      <obj_property name="ObjectShortName">data_out_s1</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/data_out_s2">
+      <obj_property name="ElementShortName">data_out_s2</obj_property>
+      <obj_property name="ObjectShortName">data_out_s2</obj_property>
    </wvobject>
    <wvobject type="logic" fp_name="/testbench/clk_s">
       <obj_property name="ElementShortName">clk_s</obj_property>

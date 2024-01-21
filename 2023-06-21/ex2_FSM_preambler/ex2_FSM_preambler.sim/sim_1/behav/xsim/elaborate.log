@@ -11,6 +11,7 @@ Time Resolution for simulation is 1ps
 Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
-Compiling architecture behavioral of entity xil_defaultlib.FSM_preambler [fsm_preambler_default]
+Compiling architecture beh_1proc of entity xil_defaultlib.FSM_preambler [fsm_preambler_default_uniq_0]
+Compiling architecture beh_2proc of entity xil_defaultlib.FSM_preambler [fsm_preambler_default_uniq_1]
 Compiling architecture behavioral of entity xil_defaultlib.testbench
 Built simulation snapshot testbench_behav
