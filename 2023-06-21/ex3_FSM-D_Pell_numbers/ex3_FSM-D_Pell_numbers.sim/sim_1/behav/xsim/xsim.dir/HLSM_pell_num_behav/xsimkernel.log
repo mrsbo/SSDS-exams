@@ -1,0 +1,7 @@
+Running: xsim.dir/HLSM_pell_num_behav/xsimk -simmode gui -wdb HLSM_pell_num_behav.wdb -simrunnum 0 -socket 52191
+Design successfully loaded
+Design Loading Memory Usage: 23200 KB (Peak: 23952 KB)
+Design Loading CPU Usage: 10 ms
+Simulation completed
+Simulation Memory Usage: 104936 KB (Peak: 162468 KB)
+Simulation CPU Usage: 40 ms

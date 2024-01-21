@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "secureip" --snapshot "HLSM_pell_num_behav" "xil_defaultlib.HLSM_pell_num" -log "elaborate.log" 
