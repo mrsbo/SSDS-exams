@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "secureip" --snapshot "FSM_preambler_behav" "xil_defaultlib.FSM_preambler" -log "elaborate.log" 

@@ -1,0 +1,4 @@
+Running: xsim.dir/FSM_preambler_behav/xsimk -simmode gui -wdb FSM_preambler_behav.wdb -simrunnum 0 -socket 44995
+Design successfully loaded
+Design Loading Memory Usage: 23180 KB (Peak: 23944 KB)
+Design Loading CPU Usage: 10 ms
