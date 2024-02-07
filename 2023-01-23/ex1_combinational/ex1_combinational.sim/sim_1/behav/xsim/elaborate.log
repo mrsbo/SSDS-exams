@@ -1,0 +1,8 @@
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /home/sbo/Builds/Xilinix/Vivado/2023.1/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot combCircuit_behav xil_defaultlib.combCircuit -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-8554] case statement does not cover all choices; 'others' clause is needed [/home/sbo/SSDS/Exams/2023-01-23/ex1_combinational/ex1_combinational.srcs/sources_1/new/combCircuit.vhd:47]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit combcircuit in library work failed.
