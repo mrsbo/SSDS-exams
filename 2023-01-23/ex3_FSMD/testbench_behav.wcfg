@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="testbench_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="testbench" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="496.851 ns"></ZoomEndTime>
+      <Cursor1Time time="0.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="112"></NameColumnWidth>
+      <ValueColumnWidth column_width="103"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="11" />
+   <wvobject type="logic" fp_name="/testbench/rst_s">
+      <obj_property name="ElementShortName">rst_s</obj_property>
+      <obj_property name="ObjectShortName">rst_s</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/clk_s">
+      <obj_property name="ElementShortName">clk_s</obj_property>
+      <obj_property name="ObjectShortName">clk_s</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/a_s">
+      <obj_property name="ElementShortName">a_s[7:0]</obj_property>
+      <obj_property name="ObjectShortName">a_s[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/b_s">
+      <obj_property name="ElementShortName">b_s[7:0]</obj_property>
+      <obj_property name="ObjectShortName">b_s[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/start_s">
+      <obj_property name="ElementShortName">start_s</obj_property>
+      <obj_property name="ObjectShortName">start_s</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/ready_s0">
+      <obj_property name="ElementShortName">ready_s0</obj_property>
+      <obj_property name="ObjectShortName">ready_s0</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/lcm_s0">
+      <obj_property name="ElementShortName">lcm_s0[15:0]</obj_property>
+      <obj_property name="ObjectShortName">lcm_s0[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group126">
+      <obj_property name="label">HLSM</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="other" fp_name="/testbench/HLSM_UUT/state">
+         <obj_property name="ElementShortName">state</obj_property>
+         <obj_property name="ObjectShortName">state</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/HLSM_UUT/m">
+         <obj_property name="ElementShortName">m[15:0]</obj_property>
+         <obj_property name="ObjectShortName">m[15:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/HLSM_UUT/n">
+         <obj_property name="ElementShortName">n[15:0]</obj_property>
+         <obj_property name="ObjectShortName">n[15:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/ready_s1">
+      <obj_property name="ElementShortName">ready_s1</obj_property>
+      <obj_property name="ObjectShortName">ready_s1</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/lcm_s1">
+      <obj_property name="ElementShortName">lcm_s1[15:0]</obj_property>
+      <obj_property name="ObjectShortName">lcm_s1[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group181">
+      <obj_property name="label">FSMD</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="other" fp_name="/testbench/FSMD_UUT/state">
+         <obj_property name="ElementShortName">state</obj_property>
+         <obj_property name="ObjectShortName">state</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/testbench/FSMD_UUT/acquire">
+         <obj_property name="ElementShortName">acquire</obj_property>
+         <obj_property name="ObjectShortName">acquire</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/testbench/FSMD_UUT/calculate">
+         <obj_property name="ElementShortName">calculate</obj_property>
+         <obj_property name="ObjectShortName">calculate</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/testbench/FSMD_UUT/done">
+         <obj_property name="ElementShortName">done</obj_property>
+         <obj_property name="ObjectShortName">done</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/FSMD_UUT/m">
+         <obj_property name="ElementShortName">m[15:0]</obj_property>
+         <obj_property name="ObjectShortName">m[15:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/FSMD_UUT/n">
+         <obj_property name="ElementShortName">n[15:0]</obj_property>
+         <obj_property name="ObjectShortName">n[15:0]</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>
