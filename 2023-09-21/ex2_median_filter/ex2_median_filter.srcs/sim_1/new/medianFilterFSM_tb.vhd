@@ -44,15 +44,25 @@ architecture Behavioral of testbench is
         );
     end component;
     
+    component medianFilterFSM_verilog is
+        port(
+            X:          in  std_logic;
+            Z:          out std_logic;
+            clk, rst:   in  std_logic
+        );
+    end component;
+    
     signal X_s:   std_logic;
-    signal Z_s:   std_logic;
+    signal Z_s0:   std_logic;
+    signal Z_s1:   std_logic;
     signal clk_s, rst_s: std_logic;
     
     constant ClockPeriod : time := 20 ns;
     
 begin
  
-     myMF : medianFilterFSM port map (X => X_s, Z => Z_s, clk => clk_s, rst => rst_s);
+     myMF0 : medianFilterFSM port map (X => X_s, Z => Z_s0, clk => clk_s, rst => rst_s);
+     myMF1 : medianFilterFSM_verilog port map (X => X_s, Z => Z_s1, clk => clk_s, rst => rst_s);
     
 ClockProc: process
 begin
